@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/diogofelde/nextraceweb_frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/diogofelde/nextraceweb_backend.git
