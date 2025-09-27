@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: nextraceweb_backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  frontend:
+    build: ./frontend
+    container_name: nextraceweb_frontend
+    ports:
+      - "5173:80"
+    environment:
+      - VITE_API_URL=http://localhost:3000
+      - NODE_ENV=${NODE_ENV}
